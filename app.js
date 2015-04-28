@@ -33,12 +33,28 @@ freelancer.config(function($stateProvider) {
 // });
 //
 freelancer.directive('showpage', function() {
-    return function (scope, element) {
+    return function (scope, element, attrs) {
         element.bind("click", function() {
-            // element.addClass("hidden");
-            // $(".hidden").removeClass();
-            $(".home").removeClass();
-            $(".hidden").removeClass();
+            $("." + attrs.showpage).removeClass("hidden");
+            $(".home").addClass("hidden");
+        });
+    };
+});
+
+// freelancer.directive('showpagework', function() {
+//     return function (scope, element, attrs) {
+//         element.bind("click", function() {
+//             $(".work").removeClass("hidden");
+//             $(".home").addClass("hidden");
+//         });
+//     };
+// });
+
+freelancer.directive('showhome', function() {
+    return function (scope, element, attrs) {
+        element.bind("click", function(){
+            $(".home").removeClass("hidden");
+            $("." + attrs.showhome).addClass("hidden");
         });
     };
 });

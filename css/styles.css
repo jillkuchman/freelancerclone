@@ -37,6 +37,15 @@
     display: none;
 }
 
-.hidden {
+.anakin-hidden {
     display:none;
+}
+
+body {
+    background-color: black;
+}
+
+.home-button {
+    position: relative;
+    left: 1000px;
 }
