@@ -9,10 +9,6 @@ freelancer.config(function($stateProvider) {
     });
 });
 
-// freelancer.config(function($stateProvider) {
-//     $stateProvider.state("")
-// })
-
 
 // freelancer.directive('buttonhover', function() {
 //     return function (scope, element) {
@@ -32,29 +28,13 @@ freelancer.config(function($stateProvider) {
 //     };
 // });
 //
+
+//showpage directive
 freelancer.directive('showpage', function() {
     return function (scope, element, attrs) {
         element.bind("click", function() {
             $("." + attrs.showpage).removeClass("hidden");
-            $(".home").addClass("hidden");
-        });
-    };
-});
-
-// freelancer.directive('showpagework', function() {
-//     return function (scope, element, attrs) {
-//         element.bind("click", function() {
-//             $(".work").removeClass("hidden");
-//             $(".home").addClass("hidden");
-//         });
-//     };
-// });
-
-freelancer.directive('showhome', function() {
-    return function (scope, element, attrs) {
-        element.bind("click", function(){
-            $(".home").removeClass("hidden");
-            $("." + attrs.showhome).addClass("hidden");
+            $("." + attrs.hidepage).addClass("hidden");
         });
     };
 });
