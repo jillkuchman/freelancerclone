@@ -1,11 +1,10 @@
-.page-header {
-    position: relative;
-    top: 130px;
-    width: 100%;
-    height: 50px;
-    top: 0;
+header {
+    position: fixed;
     background-color: white;
+    width: 100%;
+
 }
+
 
 .home {
     background-image: url("../img/rainbow-nebula.jpeg");
@@ -19,26 +18,35 @@
     border-style: solid;
     border-color: white;
     background: rgba(54, 25, 25, .00004);
+    color: white;
+    border-width: medium;
+    width: 120px;
+    height: 70px;
 }
 
 .btn-conor:hover {
     border-style: solid;
     border-color: white;
-    background: rgba(54, 25, 25, .5);
+    color: white;
+    background: rgba(255, 255, 255, .3);
 }
 
 .home-content {
-    position: relative;
+    /*position: relative;
     top: 500px;
-    left: 100px;
+    left: 100px;*/
 }
 
-.anakin {
-    display: none;
+.hire-btn {
+    position: absolute;
+    top: 70%;
+    left: 25%;
 }
 
-.anakin-hidden {
-    display:none;
+.work-btn {
+    position: absolute;
+    top: 70%;
+    left: 70%;
 }
 
 body {
@@ -46,6 +54,6 @@ body {
 }
 
 .home-button {
-    position: relative;
-    left: 1000px;
+    position: fixed;
+    left: 95%;
 }
