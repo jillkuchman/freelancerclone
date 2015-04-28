@@ -1,8 +1,8 @@
 header {
     position: fixed;
-    background-color: white;
+    background-color: white !IMPORTANT;
     width: 100%;
-
+    top: 0%;
 }
 
 
@@ -54,6 +54,13 @@ body {
 }
 
 .home-button {
-    position: fixed;
-    left: 95%;
+    position: absolute;
+    left:97%
+}
+
+.homepage {
+    position: relative;
+    top: 100px;
+    height: 750px;
+    width: 100%;
 }
