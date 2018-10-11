@@ -7,7 +7,7 @@ freelancer.controller('ImageController', function ImageController($scope) {
     //
     //
     // };
-
+//Hacktoberfest
     $scope.changeBG() = function() {
         //array of backgrounds
         now = (now+1) % array.length ;
